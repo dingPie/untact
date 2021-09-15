@@ -1,1 +1,1 @@
-web: gunicorn myapi.wspi
+web: gunicorn untacttourspot.wspi
