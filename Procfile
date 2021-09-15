@@ -1,1 +1,1 @@
-web: gunicorn untacttuorspot.wsgi --log-file -
+web: gunicorn "00.untact.wsgi" --log-file -
