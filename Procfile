@@ -1,1 +1,1 @@
-web: gunicorn untacttuorspot.wspi --log-file -
+web: gunicorn untacttuorspot.wsgi --log-file -
