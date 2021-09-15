@@ -8,3 +8,4 @@ db.mysql
 .DS_store
 
 .PyCharm/
+local_settings.py
