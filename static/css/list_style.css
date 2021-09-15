@@ -1,0 +1,128 @@
+
+.nav_bar {
+    margin-top: 64px;
+    width: var(--main-width);
+    height: 56px;
+    background: var(--main-color);
+    line-height: 56px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+select {
+    width: 100px;
+    padding: 4px;
+    border: 1px solid #999;
+    font-family: inherit;
+    border-radius: 4px;
+}
+.select_name {
+    font-size: 14px;
+    font-weight: 600;
+}
+.select_category {
+    width: 60px;
+}
+.up_down_box {
+    display: flex;
+}
+.un_down {
+    display: inline-block;
+    background: white;
+    line-height: 20px;
+}
+
+.main_box {
+    margin-top: 12px;
+    overflow: auto;
+    width: var(--main-width);
+    height: 650px;
+}
+.main_box::-webkit-scrollbar{
+    display:none;
+}
+
+/*리스트*/
+.list_box {
+    display: flex;
+    align-items: center;
+    margin: 0 4px;
+    width: 444px;
+    height: 80px;
+    background: var(--main-color);
+   /* box-shadow: darkgray 2px 2px 4px; */
+}
+.img_box {
+    margin: 0 8px;
+}
+.img_box img {
+    border-radius: 8px;
+    width: 120px;
+    height: 68px;
+    margin-top: 6px;
+}
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+.addr_box {
+    font-size: 12px;
+}
+.info_box {
+    width: 280px;
+}
+.sort_box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+.sort_btn {
+    padding: 4px;
+    border: none;
+    box-shadow: black 1px 1px 2px;
+    cursor: pointer;
+}
+.sort_btn:hover {
+    background: var(--light-color)
+}
+.views {
+    margin: 0 0 4px 8px ;
+    text-align: center;
+    width: 58px;
+    height: 12px;
+    border-radius: 4px;
+}
+#high {
+    background: coral;
+}
+#middle {
+    background: #fff36a;
+}
+#low {
+    background: #c4e0a4;
+}
+
+.category {
+    margin-left: 4px;
+    padding: 4px 0;
+    width: 60px;
+    text-align: center;
+    border-radius: 8px;
+    border: solid 3px white;
+    font-weight: 600;
+}
+#공원 {
+    background: #ffecb3;
+}
+#자연 {
+    background: #c4e0a4;
+}
+#역사 {
+    background: #ef9a9a;
+}
+#체험 {
+    background: #baddf9;
+}
+#기타 {
+    background: #d6cbc7;
+}

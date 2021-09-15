@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{% static 'css/map_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<script src="https://kit.fontawesome.com/ace68e7c88.js" crossorigin="anonymous"></script>
+	<title>untactWeb | Map</title>
+
+</head>
+<body>
+
+<div class="box">
+	<div class="speaker_box"></div>
+	<div class="home_box"></div>
+
+	<div class="logo_bar">
+		<h1>UNTACT TOUR SPOT</h1>
+	</div>
+	<div class="map_box">
+		<div id="map" style="width: 452px; height: 754px; border-radius: 24px; margin-top: 40px;"></div>
+	</div>
+	<a href="/list/"><div class="toggle-btn"><i class="fas fa-list"></i></i></div></a>
+
+	<div id="dataTitle" style='display: none;'>
+		{% for location in location_list %}
+			{{location.title}},
+		{% endfor %}
+	</div>
+
+	<div id="dataFirstImage" style='display: none;'>
+		{% for location in location_list %}
+			{{location.image}},
+		{% endfor %}
+	</div>
+
+	<div id="dataAddr" style='display: none;'>
+		{% for location in location_list %}
+			{{location.address}},
+		{% endfor %}
+	</div>
+	<div id="dataMapX" style='display: none;'>
+		{% for location in location_list %}
+			{{location.xpoint}},
+		{% endfor %}
+	</div>
+	<div id="dataMapY" style='display: none;'>
+		{% for location in location_list %}
+			{{location.ypoint}},
+		{% endfor %}
+	</div>
+	<div id="dataDetail" style='display: none;'>
+		{% for location in location_list %}
+			{{location.id}},
+		{% endfor %}
+	</div>
+
+	<div id="dataViews" style='display: none;'>
+		{% for location in location_list %}
+			{{location.views}},
+		{% endfor %}
+	</div>
+
+	<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=b5c9ec7736fd54b19c3c8d185fc9fe2e"></script>
+	<script defer src="{% static 'js/map.js' %}"></script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/intro_style.css' %}">
+    <script src="https://kit.fontawesome.com/ace68e7c88.js" crossorigin="anonymous"></script>
+    <script defer src="{% static 'js/intro.js' %}"></script>
+    <title>Document</title>
+
+</head>
+<body>
+<div class="box">
+    <div class="speaker_box"></div>
+	<div class="home_box"></div>
+    <h1 class="logo_bar">UNTACT TOUR SPOT</h1>
+
+    <ul class="intro_list">
+        <li class="list">코로나 시기에 비교적 안전하게 여행 가능한 지역을 알리고자 제작했습니다.</li>
+        <li class="list">본 앱(웹)은 한국 관광공사에서 발표한 '언택트 관광지 100선'을 참고하여 50개의 지역을 선정하였습니다.</li>
+        <li class="list">각 지역의 안전한 여행을 위해 혼잡도를 표시하였습니다.<br>
+        (현재 API문제로, '조회수'를 기준으로 혼잡도가 표시되었음을 알려드립니다.)</li>
+        <li class="list">각 지역 및 카테고리를 기준으로 원하는 관광지의 조회기능을 추가했습니다.</li>
+        <li class="list">제작: Team UTS <span>(남혜민, 라윤태, 박찬하, 김태현)<span></li>
+    </ul>
+
+    <a href="/map/"><div class="next_btn"><i class="fas fa-fingerprint"></i></div></a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+:root {
+    --main-width: 452px;
+    --main-color: #f9f9f9;
+    --light-color: white;
+}
+* {
+    box-sizing: content-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    background: #448fff;
+}
+.box{
+    position: relative;
+    z-index: 10;
+    margin: 40px auto;
+    width: var(--main-width);
+    height: 800px;
+    border: 12px solid #161615;
+    border-radius: 48px;
+    background: var(--main-color)
+}
+
+.logo_bar {
+    position: absolute;
+    z-index: 5;
+    margin: 12px 0;
+    width: 452px;
+    height: 56px;
+    background: var(--main-color);
+    line-height: 56px;
+    text-align: center;
+    border-radius: 20px;
+}
+.logo_bar h1 {
+    margin: 0;
+}
+
+
+
+.speaker_box {
+    position: absolute;
+    z-index: 12;
+    width: 120px;
+    height: 6px;
+    background: black;
+    top: 6px;
+    left: 168px;
+    border-radius: 6px;
+}
+.home_box {
+    position: absolute;
+    z-index: 12;
+    width: 160px;
+    height: 6px;
+    background: black;
+    bottom: 8px;
+    left: 142px;
+    border-radius: 6px;
+}
+
+.toggle-btn {
+    position: absolute;
+    z-index: 10;
+    right: 40px;
+    bottom: 40px;
+    width: 68px;
+    height: 68px;
+    text-align: center;
+    line-height: 68px;
+    font-size: 24px;
+    text-decoration: none;
+    background: var(--light-color);
+    border-radius: 34px;
+    box-shadow: darkgray 4px 2px 4px;
+    cursor: pointer;
+    /* font-size: 20px; */
+}

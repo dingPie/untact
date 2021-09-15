@@ -1,0 +1,70 @@
+* {
+    font-weight: 500;
+}
+h1 {
+    font-weight: 1000;
+}
+.img_box img {
+    margin: 80px 12px 8px;
+    width: 428px;
+    height: 260px;
+    box-shadow: darkgray 1px 1px 4px;
+    border-radius: 4px;
+}
+.title {
+    margin: 8px 12px;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    background: var(--light-color);
+    box-shadow: darkgray 1px 1px 4px;
+    border-radius: 4px;
+}
+.dataViews {
+    float: right;
+    line-height: 34px;
+    font-size: 16px;
+}
+
+.info_box {
+    margin: 0 12px;
+    padding: 6px;
+    height: 116px;
+    line-height: 24px;
+    background: var(--light-color);
+    box-shadow: darkgray 1px 1px 4px;
+    border-radius: 4px;
+}
+.usetime_box, .addr_box, .tel_box {
+    margin: 8px auto;
+}
+.addr_box {
+    margin-top: 16px;
+}
+.homepage_box {
+    margin: 12px 12px;
+    padding: 8px;
+    font-weight: 600;
+    text-align: center;
+    background: var(--light-color);
+    box-shadow: darkgray 1px 1px 4px;
+    border-radius: 4px;
+}
+.homepage_box:hover {
+    background: var(--main-color)
+}
+
+.explain_box {
+    margin: 12px 12px;
+    width: 428px;
+    height: 180px;
+    background: var(--light-color);
+    box-shadow: darkgray 1px 1px 2px;
+    border-radius: 4px;
+}
+.ex {
+    padding: 12px 24px 12px;
+}
+.explain {
+   padding: 12px 18px 12px;
+}

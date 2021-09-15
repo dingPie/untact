@@ -1,0 +1,10 @@
+__pychche__/
+*.py[cod]
+
+.Python
+venv/
+
+db.mysql
+.DS_store
+
+.PyCharm/
