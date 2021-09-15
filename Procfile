@@ -1,1 +1,1 @@
-web: gunicorn untacttourspot.wspi
+web: gunicorn untacttuorspot.wspi
