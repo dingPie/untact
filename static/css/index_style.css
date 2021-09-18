@@ -7,10 +7,10 @@ body {
     z-index: 5;
     /* 투명도를 통한 transiton 조정! */
     opacity: 0;
-    top: 36%;
-    left: 32%;
+    top: 40%;
+    left: 5%;
     color: white;
-    font-size: 68px;
+    font-size: 42px;
     text-shadow: black 2px 2px 4px;
 }
 .active {
