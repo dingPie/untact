@@ -22,10 +22,20 @@ class Location:
 
 # connection 연결
 def mysql_connect():
-    con = pymysql.connect(host='localhost',
-                          user='root',
-                          password='vkdl1216',
-                          db='sba',
+    # 로컬호스트용
+    # con = pymysql.connect(host='localhost',
+    #                       user='root',
+    #                       password='vkdl1216',
+    #                       db='sba',
+    #                       port=3306,
+    #                       charset='utf8',
+    #                       autocommit=True)
+
+    #heroku 서버용
+    con = pymysql.connect(host='us-cdbr-east-04.cleardb.com',
+                          user='bb685dff5d9b14',
+                          password='253186f5',
+                          db='heroku_6fadc9d6fd60830',
                           port=3306,
                           charset='utf8',
                           autocommit=True)
